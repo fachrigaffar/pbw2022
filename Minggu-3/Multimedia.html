@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Multimedia - HTML 5 </title>
+	</head>
+	<body>
+		<h2>Belajar Multimedia - HTML 5</h2>
+		<p>
+		<button onclick="playVid()" type="button">Play Vidio</button>
+		<button onclick="pauseVid()" type="button">Pause Vidio</button>
+		<button onclick="durationVid()" type="button">Duration Vidio</button>
+		<button onclick="checkControls()" type="button">Check Control Vidio</button>
+		<button onclick="enableControls()" type="button">Enable Vidio</button>
+		<button onclick="disableControls()" type="button">Disable Vidio</button>
+		<p>
+		<video width="420" id="myVideo">
+			<source src="media/mov.mp4" type="video/mp4">
+			Browser not support....
+		</video>
+	</body>
+	<script>
+	var vid = document.getElementById ("myVideo");
+	function enableControls() {
+		vid.controls = true;
+		vid.load();
+	}
+	
+	function disableControls() {
+		vid.controls = false;
+		vid.load();
+	}
+	
+	function durationVid() {
+		alert(vid.duration)
+	}
+	
+	function checkControls() {
+		alert (vid.control)
+	}
+	
+	function playVid() {
+		vid.play();
+		vid.loop = true;
+	}
+	function pauseVid() {
+		vid.pause();
+	}
+	</script>
+</html>
