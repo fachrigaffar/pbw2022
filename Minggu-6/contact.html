@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        background-color: lightgrey;
+    }
+
+    nav,
+    footer {
+        background-color: darkslategray;
+        color: aliceblue
+    }
+
+    nav>a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBW2022-Contact</title>
+    <link rel="icon" type="image/x-icon" href="source/icon.png">
+</head>
+
+<body>
+    <nav>
+        <a href="home.html">Home</a> |
+        <a href="source/CV.pdf">Download CV</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="about.html">About Me</a> |
+        <a href="vidio.html">Vidio</a> |
+    </nav>
+
+    <hr />
+
+    <div>
+        <h1>Kontak Saya </h1>
+        <form name="contact" action="source/proses.php" method="post">
+            <label for="email">Email</label>
+            <br />
+            <input type="email" name="femail" required placeholder="Alamat email" />
+            <br />
+            <label for="message">Pesan</label>
+            <br />
+            <textarea name="message" required placeholder="Tulis pesan anda..." rows="4" cols="80"></textarea>
+            <br />
+            <br />
+            <input type="submit" value="Kirim" name="fsubmit" />
+        </form>
+    </div>
+
+    <hr />
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2020 Fachri Gaffar Ilhami.</p>
+    </footer>
+</body>
+
+</html>
