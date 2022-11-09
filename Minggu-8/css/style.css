@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    
+}
+header {
+    padding: 35px;
+    background-color: lightgray;
+    border: 1px solid crimson;
+    text-align: center;
+}
+.img {
+    width: 0px;
+    height: 0px;
+}
+nav {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: lightgray;
+    border: 1px solid crimson;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.satu {
+    color: crimson;
+    font-family: "copperplate", fantasy;
+}
+.dua {
+    color: darkgreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+article {
+    float: left;
+    width: 80%;
+    background-color: lightgray;
+    border: 1px solid crimson;
+    padding: 0px 20px;
+}
+footer {
+    text-align: center;
+}
