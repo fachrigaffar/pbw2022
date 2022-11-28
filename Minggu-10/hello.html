@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Java Script 1</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <p id="par1">(P1)Lorem, ipsum.</p>
+    <p id="out">(P1)Lorem, ipsum dolor.</p>
+    <p id="hasil-output">(P1)Lorem ipsum dolor sit.</p>
+    <script>
+        // membuat objek elemen 
+        var hasil = document.getElementById("hasil-output"); 
+ 
+        // menampilkan output ke elemen hasil 
+        hasil.innerHTML = "<p>Aku suka Javascript</p>";
+        // elemen hanya bisa dipanggil sekali
+
+        var hasil = document.getElementById("out");
+        hasil.innerHTML = "<p>Percobaan element</p>";
+        </script>
+</body>
+</html>
